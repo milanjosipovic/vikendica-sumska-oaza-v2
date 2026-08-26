@@ -1,266 +1,282 @@
 <!doctype html>
 <html lang="sr">
-  <!doctype html>
-  <html lang="sr">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sumska Oaza | Vikendica za odmor u prirodi</title>
+    <meta
+      name="description"
+      content="Sumska Oaza je vikendica za miran odmor u prirodi. Direktna rezervacija, smestaj do 6 osoba, veliko dvoriste i prelep pogled."
+    />
 
-      <!-- OSNOVNI SEO TAGOVI -->
-      <title>Šumska Oaza | Vikendica u prirodi za odmor i uživanje</title>
-      <meta
-        name="description"
-        content="Iznajmljivanje komforne vikendice u netaknutoj prirodi. Idealno za porodice i parove. Kapacitet do 6 osoba, roštilj, kamin, besplatan WiFi i parking."
-      />
-      <meta
-        name="keywords"
-        content="vikendica, izdavanje vikendice, odmor u prirodi, smeštaj planina, vikendica sa roštiljem"
-      />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="utility-bar">
+      <div class="container utility-inner">
+        <a
+          href="https://maps.google.com/?q=43.85235997885131,19.843483244197106"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-solid fa-location-dot"></i>
+          Kako do nas
+        </a>
+        <a href="tel:+381601234567">
+          <i class="fa-solid fa-phone"></i>
+          +381 60 123 4567
+        </a>
+        <a href="mailto:info@sumskaoaza.rs">info@sumskaoaza.rs</a>
+      </div>
+    </div>
 
-      <!-- OPEN GRAPH TAGOVI (Za Viber, WhatsApp, Facebook, iMessage) -->
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://tvoj-domen.rs/" />
-      <meta
-        property="og:title"
-        content="Šumska Oaza | Pronađite svoj mir u prirodi"
-      />
-      <meta
-        property="og:description"
-        content="Pravi odmor daleko od gradske buke. Prostrano dvorište, roštilj, prelep pogled. Pozovite i rezervišite vaš termin."
-      />
-      <meta property="og:image" content="./media/1.jpg" />
-      <!-- Putanja do glavne slike vikendice -->
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#" class="brand">
+          <span class="brand-mark">SO</span>
+          <span class="brand-copy">
+            <strong>Sumska Oaza</strong>
+            <small>Zlatibor</small>
+          </span>
+        </a>
 
-      <!-- FAVICON (Ikonica u tabu brauzera) -->
-      <link
-        rel="icon"
-        type="image/png"
-        href="https://img.icons8.com/color/48/cabin.png"
-      />
+        <button
+          class="menu-toggle"
+          aria-label="Otvori meni"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-bars"></i>
+        </button>
 
-      <!-- FONTS & FONTAWESOME IKONICE -->
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-      <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
-        rel="stylesheet"
-      />
-      <!-- FontAwesome CDN za ikonice -->
-      <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      />
+        <nav class="site-nav" id="site-nav">
+          <a href="#o-nama">O nama</a>
+          <a href="#smestaj">Smestaj</a>
+          <a href="#galerija">Galerija</a>
+          <a href="#utisci">Utisci</a>
+          <a href="#kontakt">Kontakt</a>
+        </nav>
 
-      <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-      <!-- NAVIGACIJA -->
-      <header class="header">
-        <div class="container nav-container">
-          <a href="#" class="logo">Šumska Oaza</a>
+        <a href="#kontakt" class="btn btn-nav">Rezervisi</a>
+      </div>
+    </header>
 
-          <!-- Klasični linkovi (vidljivi na računaru) -->
-          <nav class="nav-links">
-            <a href="#o-nama">O nama</a>
-            <a href="#pogodnosti">Sadržaj</a>
-            <a href="#galerija">Galerija</a>
-            <a href="#lokacija">Lokacija</a>
-            <a href="#faq">FAQ</a>
-          </nav>
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Vikendica u netaknutoj prirodi</p>
+            <h1>Mir, tisina i pogled koji usporava dan.</h1>
+            <p>
+              Sumska Oaza je mesto za porodice i parove koji zele pravi predah
+              od gradske buke. Veliko dvoriste, borova suma i potpuni komfor.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="tel:+381601234567"
+                >Pozovite odmah</a
+              >
+              <a class="btn btn-ghost" href="#galerija">Pogledaj galeriju</a>
+            </div>
+          </div>
 
-          <!-- Jedinstveno dugme (vidljivo i na mobilnom i na desktopu) -->
-          <a href="tel:+381601234567" class="btn-header-call">
-            <i class="fa-solid fa-phone"></i> <span>Pozovite</span>
-          </a>
+          <aside class="booking-card" aria-label="Brza rezervacija">
+            <h2>Direktna rezervacija</h2>
+            <p>Najbolja cena direktno kod domacina.</p>
+            <form class="booking-form">
+              <label for="quick-checkin">Dolazak</label>
+              <input type="date" id="quick-checkin" name="quick-checkin" />
+
+              <label for="quick-checkout">Odlazak</label>
+              <input type="date" id="quick-checkout" name="quick-checkout" />
+
+              <button type="button" class="btn btn-primary">
+                Proveri dostupnost
+              </button>
+            </form>
+          </aside>
         </div>
-      </header>
+      </section>
 
-      <!-- HERO SEKCIJA -->
-      <section class="hero">
-        <div class="hero-content">
-          <h1>Pronađite svoj mir u netaknutoj prirodi</h1>
-          <p>
-            Pravi odmor daleko od gradske buke. Idealno za porodice i parove.
-          </p>
-          <div class="hero-buttons">
-            <a href="tel:+381601234567" class="btn btn-primary"
-              >Pozovite: 060 123 4567</a
-            >
-            <a href="#galerija" class="btn btn-secondary">Pogledaj galeriju</a>
+      <section class="trust-strip" aria-label="Prednosti">
+        <div class="container trust-grid">
+          <div><strong>6 osoba</strong><span>Kapacitet smestaja</span></div>
+          <div><strong>4.9/5</strong><span>Ocena gostiju</span></div>
+          <div><strong>20 min</strong><span>Do centra grada</span></div>
+          <div><strong>0 m</strong><span>Priroda pred vratima</span></div>
+        </div>
+      </section>
+
+      <section id="o-nama" class="section about">
+        <div class="container about-grid">
+          <div>
+            <p class="eyebrow">Upoznajmo se</p>
+            <h2>Mesto gde odmor ponovo ima smisla.</h2>
+            <p>
+              Opremljena kuhinja, udoban dnevni boravak, terasa u zelenilu i
+              veliko dvoriste za porodicno vreme. Sve je pripremljeno za
+              spokojan boravak tokom cele godine.
+            </p>
+          </div>
+          <div class="amenities-grid">
+            <div class="amenity">
+              <i class="fa-solid fa-wifi"></i><span>Besplatan WiFi</span>
+            </div>
+            <div class="amenity">
+              <i class="fa-solid fa-fire"></i><span>Kamin i grejanje</span>
+            </div>
+            <div class="amenity">
+              <i class="fa-solid fa-square-parking"></i
+              ><span>Privatan parking</span>
+            </div>
+            <div class="amenity">
+              <i class="fa-solid fa-paw"></i><span>Pet friendly</span>
+            </div>
+            <div class="amenity">
+              <i class="fa-solid fa-utensils"></i
+              ><span>Opremljena kuhinja</span>
+            </div>
+            <div class="amenity">
+              <i class="fa-solid fa-tree"></i><span>Mirna borova suma</span>
+            </div>
           </div>
         </div>
       </section>
 
-      <!-- O NAMA -->
-      <section id="o-nama" class="section">
+      <section id="smestaj" class="section stays bg-soft">
         <div class="container">
-          <h2 class="section-title">Dobrodošli u našu vikendicu</h2>
-          <p class="section-text">
-            Vikendica je smeštena na obroncima planine, okružena gustim šumama i
-            čistim vazduhom. Objekat raspolaže kapacitetom do 6 osoba, sa
-            prostranim dvorištem, terasom i letnjikovcem za roštilj.
-          </p>
-        </div>
-      </section>
+          <p class="eyebrow center">Nase kuce</p>
+          <h2 class="section-title">Odaberite stil boravka</h2>
 
-      <!-- POGODNOSTI -->
-      <!-- POGODNOSTI SA IKONICAMA -->
-      <section id="pogodnosti" class="section bg-light">
-        <div class="container">
-          <h2 class="section-title">Šta ponuda obuhvata</h2>
-          <div class="features-grid">
-            <div class="feature-card">
-              <i class="fa-solid fa-wifi feature-icon"></i>
-              <span>Besplatan WiFi</span>
-            </div>
-            <div class="feature-card">
-              <i class="fa-solid fa-fire-burner feature-icon"></i>
-              <span>Opremljen roštilj</span>
-            </div>
-            <div class="feature-card">
-              <i class="fa-solid fa-square-parking feature-icon"></i>
-              <span>Besplatan parking</span>
-            </div>
-            <div class="feature-card">
-              <i class="fa-solid fa-paw feature-icon"></i>
-              <span>Pet-friendly</span>
-            </div>
-            <div class="feature-card">
-              <i class="fa-solid fa-fire feature-icon"></i>
-              <span>Kamin u kući</span>
-            </div>
-            <div class="feature-card">
-              <i class="fa-solid fa-mountain-sun feature-icon"></i>
-              <span>Pogled na prirodu</span>
-            </div>
+          <div class="stays-grid">
+            <article class="stay-card reveal">
+              <img src="./media/2.jpg" alt="Kuca sa dve spavace sobe" />
+              <div class="stay-content">
+                <h3>Kuca sa 2 spavace sobe</h3>
+                <p>
+                  Idealna za porodice do 5 osoba. Topao enterijer, terasa i
+                  pogled na zelenilo.
+                </p>
+                <ul>
+                  <li>Do 5 osoba</li>
+                  <li>2 spavace sobe</li>
+                  <li>Dnevni boravak i kuhinja</li>
+                </ul>
+                <a href="#kontakt" class="btn btn-primary">Rezervisi termin</a>
+              </div>
+            </article>
+
+            <article class="stay-card reveal">
+              <img src="./media/3.jpg" alt="Kuca sa tri spavace sobe" />
+              <div class="stay-content">
+                <h3>Kuca sa 3 spavace sobe</h3>
+                <p>
+                  Prostrana opcija za veca drustva do 7 osoba sa vise prostora
+                  za zajednicki odmor.
+                </p>
+                <ul>
+                  <li>Do 7 osoba</li>
+                  <li>3 spavace sobe</li>
+                  <li>Veca galerija i dnevni prostor</li>
+                </ul>
+                <a href="#kontakt" class="btn btn-primary"
+                  >Proveri dostupnost</a
+                >
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
-      <!-- GALERIJA -->
       <section id="galerija" class="section">
         <div class="container">
-          <h2 class="section-title">Galerija slika</h2>
+          <p class="eyebrow center">Galerija</p>
+          <h2 class="section-title">Pogledajte atmosferu Sumske Oaze</h2>
           <div class="gallery-grid">
+            <img
+              src="./media/1.jpg"
+              alt="Vikendica okruzena sumom"
+              class="gallery-img"
+            />
             <img
               src="./media/2.jpg"
               alt="Eksterijer vikendice"
               class="gallery-img"
             />
-            <img src="./media/3.jpg" alt="Dnevni boravak" class="gallery-img" />
-            <img src="./media/4.jpg" alt="Spavaća soba" class="gallery-img" />
+            <img
+              src="./media/3.jpg"
+              alt="Uredjen dnevni boravak"
+              class="gallery-img"
+            />
+            <img
+              src="./media/4.jpg"
+              alt="Spavaca soba sa drvenim detaljima"
+              class="gallery-img"
+            />
             <img
               src="./media/5.jpg"
-              alt="Dvorište i priroda"
+              alt="Dvoriste i prirodno okruzenje"
+              class="gallery-img"
+            />
+            <img
+              src="./media/6.jpg"
+              alt="Panorama okoline"
               class="gallery-img"
             />
           </div>
         </div>
       </section>
 
-      <!-- LOKACIJA -->
-      <section id="lokacija" class="section bg-light">
+      <section id="utisci" class="section bg-soft testimonials">
         <div class="container">
-          <h2 class="section-title">Gde se nalazimo</h2>
-          <p class="section-text">
-            Na samo 20 kilometara od grada, sa obezbeđenim asfaltiranim
-            prilazom.
-          </p>
-          <div class="map-responsive">
-            <!-- Google Maps Embed Primer -->
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.167347642195!2d19.843483244197106!3d43.85235997885131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4759d351fd2b8b7b%3A0x4b5bcd4a528d9bdb!2zTmlrb2xlIFBhxaFpxIdhIDbQlSwgVcW-aWNl!5e0!3m2!1sen!2srs!4v1787768142490!5m2!1sen!2srs"
-              width="100%"
-              height="450"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="strict-origin-when-cross-origin"
-            ></iframe>
+          <p class="eyebrow center">Utisci gostiju</p>
+          <h2 class="section-title">Sta kazu oni koji nam se vracaju</h2>
+          <div class="testimonial-grid">
+            <blockquote>
+              "Predivno mesto za pravi reset. Cisto, toplo i veoma prijatni
+              domacini."
+              <cite>Ana, Novi Sad</cite>
+            </blockquote>
+            <blockquote>
+              "Deca su uzivala u dvoristu, a mi u tisini i prirodi. Sigurno
+              dolazimo opet."
+              <cite>Marko, Beograd</cite>
+            </blockquote>
+            <blockquote>
+              "Odlican balans udobnosti i prirode. Sve je tacno kao na slikama."
+              <cite>Ivana, Kragujevac</cite>
+            </blockquote>
           </div>
         </div>
       </section>
 
-      <!-- FAQ SEKCIJA -->
-      <section id="faq" class="section">
-        <div class="container">
-          <h2 class="section-title">Često postavljana pitanja</h2>
-          <div class="faq-container">
-            <details class="faq-item">
-              <summary class="faq-question">
-                Koje je vreme prijave i odjave (Check-in / Check-out)?
-              </summary>
-              <p class="faq-answer">
-                Prijava (Check-in) je od 14:00h, a odjava (Check-out) je do
-                10:00h. Ukoliko nemamo spojenih gostiju, moguć je i raniji
-                ulazak po dogovoru.
-              </p>
-            </details>
-
-            <details class="faq-item">
-              <summary class="faq-question">
-                Da li su kućni ljubimci dozvoljeni?
-              </summary>
-              <p class="faq-answer">
-                Da! Naša vikendica je Pet-friendly. Molimo vas samo da nas
-                unapred obavestite prilikom rezervacije.
-              </p>
-            </details>
-
-            <details class="faq-item">
-              <summary class="faq-question">
-                Kako se vrši plaćanje i rezervacija?
-              </summary>
-              <p class="faq-answer">
-                Rezervacija se potvrđuje uplatom kapare od 20%, dok se preostali
-                iznos plaća prilikom dolaska u objekat.
-              </p>
-            </details>
-
-            <details class="faq-item">
-              <summary class="faq-question">
-                Da li je obezbeđen parking i kakav je prilaz?
-              </summary>
-              <p class="faq-answer">
-                Da, imamo besplatan privatni parking za više vozila u dvorištu.
-                Prilaz vikendici je u potpunosti asfaltiran i prohodan tokom
-                cele godine.
-              </p>
-            </details>
-
-            <details class="faq-item">
-              <summary class="faq-question">
-                Šta je sve obezbeđeno od opreme u kući?
-              </summary>
-              <p class="faq-answer">
-                Obezbeđeni su čista posteljina, peškiri, pribor za pripremu
-                hrane, drva za kamin/roštilj, kao i besplatan WiFi internet.
-              </p>
-            </details>
-          </div>
-        </div>
-      </section>
-
-      <!-- KONTAKT -->
       <section id="kontakt" class="section contact-section">
-        <!-- KONTAKT SEKCIJA SA FORMOM -->
-        <section id="kontakt" class="section contact-section">
-          <div class="container">
-            <h2>Rezervišite Vaš boravak</h2>
+        <div class="container contact-grid">
+          <div>
+            <p class="eyebrow light">Kontakt i rezervacije</p>
+            <h2>Rezervisite vas boravak</h2>
             <p>
-              Primarni način rezervacije je putem telefona, a možete nam poslati
-              i direktan upit.
+              Pozovite nas za najbrzu potvrdu termina ili posaljite upit putem
+              forme. Odgovaramo u najkracem roku.
             </p>
-
-            <!-- Brza dugmad za mobilni/instant kontakt -->
             <div class="contact-buttons">
               <a href="tel:+381601234567" class="btn btn-call"
-                ><i class="fa-solid fa-phone"></i> Pozovite: +381 60 123 4567</a
+                ><i class="fa-solid fa-phone"></i> Pozovite</a
               >
               <a
                 href="https://wa.me/381601234567"
-                target="_blank"
                 class="btn btn-whatsapp"
+                target="_blank"
+                rel="noopener noreferrer"
                 ><i class="fa-brands fa-whatsapp"></i> WhatsApp</a
               >
               <a
@@ -269,61 +285,31 @@
                 ><i class="fa-brands fa-viber"></i> Viber</a
               >
             </div>
+          </div>
 
-            <!-- FORMA ZA SLANJE UPITA -->
-            <div class="contact-form-container">
-              <h3>Pošaljite upit za rezervaciju</h3>
-              <!-- PASTE-UJ TVOJ FORMSPREE LINK U ACTION ATRIBUT: -->
-              <form
-                action="https://formspree.io/f/TVOJ_FORMSPREE_KOD"
-                method="POST"
-                class="contact-form"
-              >
+          <div class="contact-form-container">
+            <h3>Posaljite upit</h3>
+            <form
+              class="contact-form"
+              action="https://formspree.io/f/TVOJ_FORMSPREE_KOD"
+              method="POST"
+            >
+              <div class="form-row">
                 <div class="form-group">
-                  <label for="name">Vaše Ime i Prezime</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="npr. Marko Marković"
-                    required
-                  />
+                  <label for="name">Ime i prezime</label>
+                  <input type="text" id="name" name="name" required />
                 </div>
-
-                <div class="form-row">
-                  <div class="form-group">
-                    <label for="email">E-mail adresa</label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      placeholder="npr. marko@gmail.com"
-                      required
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="phone">Broj telefona</label>
-                    <input
-                      type="tel"
-                      id="phone"
-                      name="phone"
-                      placeholder="npr. 060 123 4567"
-                      required
-                    />
-                  </div>
+                <div class="form-group">
+                  <label for="phone">Telefon</label>
+                  <input type="tel" id="phone" name="phone" required />
                 </div>
+              </div>
 
-                <div class="form-row">
-                  <div class="form-group">
-                    <label for="checkin">Datum dolaska</label>
-                    <input type="date" id="checkin" name="checkin" required />
-                  </div>
-                  <div class="form-group">
-                    <label for="checkout">Datum odlaska</label>
-                    <input type="date" id="checkout" name="checkout" required />
-                  </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required />
                 </div>
-
                 <div class="form-group">
                   <label for="guests">Broj osoba</label>
                   <select id="guests" name="guests" required>
@@ -332,52 +318,64 @@
                     <option value="5-6">5 - 6 osoba</option>
                   </select>
                 </div>
+              </div>
 
+              <div class="form-row">
                 <div class="form-group">
-                  <label for="message">Dodatne napomene ili pitanja</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows="4"
-                    placeholder="Opširnije o vašem dolasku, deca, kućni ljubimci..."
-                  ></textarea>
+                  <label for="checkin">Dolazak</label>
+                  <input type="date" id="checkin" name="checkin" required />
                 </div>
+                <div class="form-group">
+                  <label for="checkout">Odlazak</label>
+                  <input type="date" id="checkout" name="checkout" required />
+                </div>
+              </div>
 
-                <button type="submit" class="btn btn-submit">
-                  Pošaljite upit
-                </button>
-              </form>
-            </div>
+              <div class="form-group">
+                <label for="message">Poruka</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  placeholder="Napisite zeljeni termin i dodatna pitanja..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-submit">
+                Posaljite upit
+              </button>
+            </form>
           </div>
-        </section>
+        </div>
       </section>
+    </main>
 
-      <!-- FOOTER -->
-      <footer class="footer">
-        <p>&copy; 2026 Šumska Oaza. Sva prava zadržana.</p>
-      </footer>
-      <!-- LIGHTBOX MODAL ZA SLIKE -->
-      <div id="lightbox" class="lightbox">
-        <button class="lightbox-nav lightbox-prev" aria-label="Prethodna slika">
-          <i class="fa-solid fa-chevron-left"></i>
-        </button>
-        <span class="lightbox-close">&times;</span>
-        <img
-          id="lightbox-img"
-          class="lightbox-content"
-          src=""
-          alt="Uvećana slika"
-        />
-        <button class="lightbox-nav lightbox-next" aria-label="Sledeća slika">
-          <i class="fa-solid fa-chevron-right"></i>
-        </button>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>&copy; <span id="year"></span> Sumska Oaza. Sva prava zadrzana.</p>
       </div>
+    </footer>
 
-      <!-- FIKSIRANO DUGME ZA POZIV (Vidljivo samo na mobilnim uređajima) -->
-      <a href="tel:+381601234567" class="mobile-sticky-call">
-        📞 Pozovite odmah
-      </a>
-      <script src="main.js"></script>
-    </body>
-  </html>
+    <div id="lightbox" class="lightbox" aria-hidden="true">
+      <button class="lightbox-nav lightbox-prev" aria-label="Prethodna slika">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      <button class="lightbox-close" aria-label="Zatvori galeriju">
+        &times;
+      </button>
+      <img
+        id="lightbox-img"
+        class="lightbox-content"
+        src=""
+        alt="Uvecana slika"
+      />
+      <button class="lightbox-nav lightbox-next" aria-label="Sledeca slika">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+
+    <a href="tel:+381601234567" class="mobile-sticky-call">Pozovite odmah</a>
+
+    <script src="main.js"></script>
+  </body>
 </html>
