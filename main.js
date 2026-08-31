@@ -156,3 +156,61 @@ document.addEventListener("DOMContentLoaded", () => {
     input.min = today;
   });
 });
+const contactForm = document.getElementById("contact-form");
+const formFields = document.getElementById("form-fields");
+const formStatus = document.getElementById("form-status");
+const submitBtn = document.getElementById("submit-btn");
+
+contactForm.addEventListener("submit", async function (event) {
+  event.preventDefault();
+
+  // Indicate loading state
+  submitBtn.disabled = true;
+  submitBtn.textContent = "Šalje se...";
+
+  const data = new FormData(event.target);
+
+  try {
+    const response = await fetch(event.target.action, {
+      method: contactForm.method,
+      body: data,
+      headers: {
+        Accept: "application/json",
+      },
+    });
+
+    if (response.ok) {
+      // Hide form fields smoothly
+      formFields.style.display = "none";
+
+      // Render warm Thank You moment
+      formStatus.innerHTML = `
+        <div class="thank-you-card" style="animation: fadeIn 0.5s ease-in-out;">
+          <div style="font-size: 3rem; color: #2e7d32; margin-bottom: 10px;">✓</div>
+          <h3 style="font-size: 1.5rem; margin-bottom: 8px; color: #1b5e20;">Hvala vam na upitu!</h3>
+          <p style="font-size: 1.05rem; line-height: 1.5; color: #424242;">
+            Vaša poruka je uspešno poslata. Javiti ćemo vam se u najkraćem mogućem roku radi potvrde rezervacije.
+          </p>
+        </div>
+      `;
+      formStatus.style.display = "block";
+      contactForm.reset();
+    } else {
+      const result = await response.json();
+      throw new Error(
+        result.errors
+          ? result.errors.map((e) => e.message).join(", ")
+          : "Došlo je do greške.",
+      );
+    }
+  } catch (error) {
+    submitBtn.disabled = false;
+    submitBtn.textContent = "Pošaljite upit";
+    formStatus.innerHTML = `
+      <p style="color: #d32f2f; margin-top: 10px;">
+        Nažalost, došlo je do greške prilikom slanja. Molimo vas pokušajte ponovo ili nas kontaktirajte direktno putem telefona.
+      </p>
+    `;
+    formStatus.style.display = "block";
+  }
+});

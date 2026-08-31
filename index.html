@@ -25,7 +25,7 @@
     <div class="utility-bar">
       <div class="container utility-inner">
         <a
-          href="https://maps.google.com/?q=43.85235997885131,19.843483244197106"
+          href="https://maps.google.com/?q=43.891290,19.781953"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -45,8 +45,8 @@
         <a href="#" class="brand">
           <span class="brand-mark">🌿</span>
           <span class="brand-copy">
-            <strong>Trenutak Mira</strong>
-            <small>Volujac</small>
+            <strong>Etno Konak Trenutak Mira</strong>
+            <small>Volujac, Užice</small>
           </span>
         </a>
 
@@ -75,11 +75,12 @@
         <div class="hero-overlay"></div>
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow">Vikendica u netaknutoj prirodi</p>
+            <p class="eyebrow">Konak u netaknutoj prirodi</p>
             <h1>Mir, tišina i pogled koji usporava dan.</h1>
             <p>
-              Šumska Oaza je mesto za porodice i parove koji žele pravi predah
-              od gradske buke. Veliko dvorište, borova šuma i potpuni komfor.
+              Deset minuta od centra Užica, na raskršću Tare i Zlatibora. Šumska
+              Oaza je mesto za porodice i parove koji žele pravi predah od
+              gradske buke. Veliko dvorište, borova šuma i potpuni komfor.
             </p>
             <div class="hero-actions">
               <a class="btn btn-primary" href="tel:+381601234567"
@@ -152,7 +153,7 @@
               ><span>Opremljena kuhinja</span>
             </div>
             <div class="amenity">
-              <i class="fa-solid fa-tree"></i><span>Mirna borova suma</span>
+              <i class="fa-solid fa-tree"></i><span>Mirna borova šuma</span>
             </div>
           </div>
         </div>
@@ -212,7 +213,7 @@
           <h2 class="section-title">Pogledajte atmosferu Šumske Oaze</h2>
           <div class="gallery-grid">
             <img
-              src="./media/testBooking.jpg"
+              src="./media/27.jpg"
               alt="Vikendica okruzena sumom"
               class="gallery-img"
             />
@@ -239,6 +240,21 @@
             <img
               src="./media/6.jpg"
               alt="Panorama okoline"
+              class="gallery-img"
+            />
+            <img
+              src="./media/7.jpg"
+              alt="Vikendica okruzena sumom"
+              class="gallery-img"
+            />
+            <img
+              src="./media/8.jpg"
+              alt="Eksterijer vikendice"
+              class="gallery-img"
+            />
+            <img
+              src="./media/21.jpg"
+              alt="Uredjen dnevni boravak"
               class="gallery-img"
             />
           </div>
@@ -299,59 +315,62 @@
           <div class="contact-form-container">
             <h3>Pošaljite upit</h3>
             <form
+              id="contact-form"
               class="contact-form"
               action="https://formspree.io/f/mljerdyz"
               method="POST"
             >
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="name">Ime i prezime</label>
-                  <input type="text" id="name" name="name" required />
+              <!-- Form Fields Container -->
+              <div id="form-fields">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name">Ime i prezime</label>
+                    <input type="text" id="name" name="name" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="phone">Telefon</label>
+                    <input type="tel" id="phone" name="phone" required />
+                  </div>
                 </div>
-                <div class="form-group">
-                  <label for="phone">Telefon</label>
-                  <input type="tel" id="phone" name="phone" required />
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+                  </div>
                 </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="checkin">Dolazak</label>
+                    <input type="date" id="checkin" name="checkin" required />
+                  </div>
+                  <div class="form-group">
+                    <label for="checkout">Odlazak</label>
+                    <input type="date" id="checkout" name="checkout" required />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Poruka</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    placeholder="Napišite željeni termin i dodatna pitanja..."
+                  ></textarea>
+                </div>
+
+                <button type="submit" id="submit-btn" class="btn btn-submit">
+                  Pošaljite upit
+                </button>
               </div>
 
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" required />
-                </div>
-                <!-- <div class="form-group">
-                  <label for="guests">Broj osoba</label>
-                  <select id="guests" name="guests" required>
-                    <option value="1-2">1 - 2 osobe</option>
-                    <option value="3-4">3 - 4 osobe</option>
-                  </select>
-                </div> -->
-              </div>
-
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="checkin">Dolazak</label>
-                  <input type="date" id="checkin" name="checkin" required />
-                </div>
-                <div class="form-group">
-                  <label for="checkout">Odlazak</label>
-                  <input type="date" id="checkout" name="checkout" required />
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label for="message">Poruka</label>
-                <textarea
-                  id="message"
-                  name="message"
-                  rows="4"
-                  placeholder="Napišite željeni termin i dodatna pitanja..."
-                ></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-submit">
-                Pošaljite upit
-              </button>
+              <!-- Thank You / Status Container (Hidden initially) -->
+              <div
+                id="form-status"
+                style="display: none; text-align: center; padding: 20px 10px"
+              ></div>
             </form>
           </div>
         </div>
