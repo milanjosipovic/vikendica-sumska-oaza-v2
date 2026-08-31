@@ -165,7 +165,7 @@ img {
   gap: 10px;
 }
 
-.brand-mark {
+/* .brand-mark {
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -177,7 +177,7 @@ img {
   font-family: "Cormorant Garamond", serif;
   font-weight: 700;
   font-size: 1.18rem;
-}
+} */
 
 .brand-copy {
   display: flex;
@@ -233,7 +233,7 @@ img {
   display: grid;
   align-items: center;
   overflow: hidden;
-  background: url("media/6.jpg") center/cover no-repeat;
+  background: url("media/16.jpg") center/cover no-repeat;
 }
 
 .hero-overlay {
@@ -411,7 +411,8 @@ img {
 
 .stays-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(320px, 860px);
+  justify-content: center;
   gap: 22px;
 }
 
@@ -425,12 +426,13 @@ img {
 
 .stay-card img {
   width: 100%;
-  height: 250px;
+  height: 290px;
   object-fit: cover;
 }
 
 .stay-content {
   padding: 20px;
+  text-align: center;
 }
 
 .stay-content h3 {
@@ -447,8 +449,19 @@ img {
 
 .stay-content ul {
   margin: 0 0 16px;
-  padding-left: 18px;
+  padding-left: 0;
+  list-style-position: inside;
   color: #2f4439;
+}
+
+.stay-content li {
+  text-align: center;
+}
+
+.stay-content .btn {
+  display: flex;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .gallery-grid {
