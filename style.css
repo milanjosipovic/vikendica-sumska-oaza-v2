@@ -831,8 +831,4 @@ img {
     opacity: 1;
     pointer-events: auto;
   }
-
-  body {
-    padding-bottom: 84px;
-  }
 }
