@@ -233,7 +233,7 @@ img {
   display: grid;
   align-items: center;
   overflow: hidden;
-  background: url("media/16.jpg") center/cover no-repeat;
+  background: url("media/16.webp") center/cover no-repeat;
 }
 
 .hero-overlay {
